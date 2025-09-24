@@ -1,2 +1,3 @@
 Starting Portfolio
-setup project
+setup project 
+start coding 
