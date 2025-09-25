@@ -10,11 +10,11 @@ const Navbar = () => {
           <Image src={assets.logo} alt='nameWhite' className='w-28 cursor-pointer mr-14 ' />
         </a>
         <ul className='hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3'>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#top">ABout me</a></li>
-          <li><a href="#top">servies</a></li>
-          <li><a href="#top">My Work</a></li>
-          <li><a href="#top">Contant me</a></li>
+          <li><a className='font-ovo' href="#top">Home</a></li>
+          <li><a className='font-ovo' href="#top">About </a></li>
+          <li><a className='font-ovo' href="#top">servies</a></li>
+          <li><a className='font-ovo' href="#top">Work</a></li>
+          <li><a className='font-ovo' href="#top">Contant</a></li>
         </ul>
         <div>
           <a
