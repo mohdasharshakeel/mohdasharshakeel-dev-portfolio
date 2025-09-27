@@ -49,7 +49,7 @@ const Navbar = () => {
               className="w-3"
             />
           </a>
-          <button className='block md:hidden ml-3'>
+          <button className='block md:hidden ml-3' onClick={openMenu}>
             <Image src={assets.menu_black} alt='' className='w-6'/>
           </button>
         </div>
@@ -57,14 +57,14 @@ const Navbar = () => {
         {/* // Mobile Menu  */} 
 
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500'>
-          <div className='position absolute right-6 top-6'>
+          <div className='position absolute right-6 top-6' onClick={closeMenu}>
             <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
           </div>
-          <li><a className='font-ovo' href="#top">Home</a></li>
-          <li><a className='font-ovo' href="#top">About </a></li>
-          <li><a className='font-ovo' href="#top">servies</a></li>
-          <li><a className='font-ovo' href="#top">Work</a></li>
-          <li><a className='font-ovo' href="#top">Contant</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#top">Home</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#top">About </a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#top">servies</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#top">Work</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#top">Contant</a></li>
         </ul>
 
         
