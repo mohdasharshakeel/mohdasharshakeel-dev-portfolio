@@ -42,9 +42,12 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* // Mobile Menu  */}
+        {/* // Mobile Menu  */} 
 
         <ul className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500'>
+          <div className='position absolute right-6 top-6'>
+            <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
+          </div>
           <li><a className='font-ovo' href="#top">Home</a></li>
           <li><a className='font-ovo' href="#top">About </a></li>
           <li><a className='font-ovo' href="#top">servies</a></li>
