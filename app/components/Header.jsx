@@ -16,7 +16,7 @@ const Header = () => {
 <p className='max-w-2xl mx-auto font-Ovo'>
   Full Stack Developer skilled in React.js, Node.js, MongoDB, and Next.js, building scalable, high-performance web apps. Experienced in RESTful APIs, AI integrations, and responsive design with Tailwind CSS.
 </p>
-<div>
+<div className='flex flex-col sm:flex-row items-center gap-4 mt-4 '>
   <a href="#contact" 
   className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Contact <Image src={assets.right_arrow_white} alt='' className='  w-4 '/></a>
   <a href="/sample-resume.pdf" download className='px-10 py-3 border-full border-gray-500 flex items-center gap-2 ' >Resume  <Image src={assets.download_icon } alt='' className='  w-4 '/></a>
