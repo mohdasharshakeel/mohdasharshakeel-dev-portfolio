@@ -152,17 +152,13 @@ export const infoList = [
 // ======================= Tools Data =======================
 
 export const toolsData = [
-    assets.vscode,
     assets.typescript_icon,
     assets.mongodb,
     assets.javascript_icon,
     assets.git,
     assets.docker_icon,
     assets.expressjs_icon,
-    assets.nextjs_icon,
     assets.react_icon,
     assets.nodejs_icon,
-    assets.firebase,
-    assets.figma,
     assets.aws_icon,
 ];
