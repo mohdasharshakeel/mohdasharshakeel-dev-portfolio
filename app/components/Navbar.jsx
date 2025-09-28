@@ -7,6 +7,7 @@ import { useRef } from 'react';
 
 const Navbar = () => {
 
+  const [isSCroll, setIsScroll] = useState(false)
   const sideMenuRef = useRef()
   const openMenu  = () =>{
     sideMenuRef.current.style.transform = 'translateX(-16rem)';
@@ -18,9 +19,9 @@ const Navbar = () => {
    useEffect(()=>{
     window.addEventListener('scroll', ()=>{
       if(scrollY > 50){
-
-      }else{
-         
+        setIsScroll(true)
+      }else{   
+         setIsScroll(false)
       }
     })
    }, [])
@@ -30,7 +31,7 @@ const Navbar = () => {
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
       <Image src={assets.header_bg_color} alt='bgc' className='w-full'/>
     </div>
-      <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50 '>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50 `}>
         <a href="#top">
           <Image src={assets.logo} alt='nameWhite' className='w-28 cursor-pointer mr-14 ' />
         </a>
