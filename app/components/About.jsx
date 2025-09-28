@@ -22,7 +22,7 @@ const About = () => {
                             </li>
                         ))}
                     </ul>
-                    <h4 className=''>Tools I Use</h4>
+                    <h4 className='my-6 text-gray-700 font-Ovo '>Tools I Use</h4>
                     <ul>
                             {toolsData.map((tool , index)=>(
                                 <li key={index}>
