@@ -15,6 +15,16 @@ const Navbar = () => {
     sideMenuRef.current.style.transform = 'translateX(16rem)';
   }
 
+   useEffect(()=>{
+    window.addEventListener('scroll', ()=>{
+      if(scrollY > 50){
+
+      }else{
+         
+      }
+    })
+   }, [])
+
   return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
