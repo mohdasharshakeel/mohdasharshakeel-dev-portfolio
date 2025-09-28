@@ -11,8 +11,16 @@ body {
   box-sizing: border-box;
 }
 
-@theme {
---color-lightHover: #fcf4ff,
---color-darkHover: #2a004a,
---color-darkTheme: "#11001f",
+:root {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+}
+
+/* custom utility classes for hover background */
+.hover-lightHover:hover {
+  background-color: var(--color-lightHover);
+}
+.hover-darkHover:hover {
+  background-color: var(--color-darkHover);
 }

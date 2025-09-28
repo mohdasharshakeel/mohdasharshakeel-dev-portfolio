@@ -15,7 +15,7 @@ const About = () => {
                     <p className='mb-10 max-w-2xl font-Ovo'>Full Stack Developer specializing in React, Next.js, Node.js & MongoDB. Built multiple live projects, developing scalable, high-performance web apps with responsive, modern UIs. Skilled in RESTful APIs, AI integration, and performance optimization.</p>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl  font-Ovo'>
                         {infoList.map(({icon, iconDark, title, description}, index  )=>(
-                            <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer '  key={index}>
+                            <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500'  key={index}>
                                 <Image  src={icon} alt={title} className='w-7 mt-3 '/>
                                 <h3 className='my-4 font-semibold text-gray-700 '>{title}</h3>
                                 <p className='text-gray-600 text-sm '>{description}</p>
