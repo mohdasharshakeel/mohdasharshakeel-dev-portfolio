@@ -1,3 +1,5 @@
+// ======================= Imports =======================
+
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -35,6 +37,20 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import javascript_icon from './JavaScript.png';
+import typescript_icon from './TypeScript.png';
+import nodejs_icon from './Node.js.png';
+import expressjs_icon from './Express.png';
+import aws_icon from './AWS.png';
+import docker_icon from './Docker.png';
+import github_icon from './GitHub.png';
+import gitlab_icon from './GitLab.png';
+import react_icon from './ReactIcon.png';
+import nextjs_icon from './Next.js.png';
+import npm_icon from './NPM_icon.png';
+
+
+// ======================= Assets Object =======================
 
 export const assets = {
     user_image,
@@ -73,8 +89,22 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    javascript_icon,
+    typescript_icon,
+    nodejs_icon,
+    expressjs_icon,
+    aws_icon,
+    docker_icon,
+    github_icon,
+    gitlab_icon,
+    react_icon,
+    nextjs_icon,
+    npm_icon
 };
+
+
+// ======================= Work Data =======================
 
 export const workData = [
     {
@@ -97,21 +127,42 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
-]
+];
+
+
+// ======================= Services Data =======================
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+];
+
+
+// ======================= Info List =======================
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Javascript ES6+ Typescript C++ HTML CSS' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor degree in Computer Application' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Created multiple live projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Created multiple live projects' },
 ];
 
+
+// ======================= Tools Data =======================
+
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode,
+    assets.typescript_icon,
+    assets.mongodb,
+    assets.javascript_icon,
+    assets.git,
+    assets.docker_icon,
+    assets.expressjs_icon,
+    assets.nextjs_icon,
+    assets.react_icon,
+    assets.nodejs_icon,
+    assets.firebase,
+    assets.figma,
+    assets.aws_icon,
 ];

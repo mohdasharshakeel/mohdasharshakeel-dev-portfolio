@@ -1,4 +1,4 @@
-import { assets, infoList } from '@/assets/assets'
+import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
@@ -23,7 +23,13 @@ const About = () => {
                         ))}
                     </ul>
                     <h4>Tools I Use</h4>
-                    <ul></ul>
+                    <ul>
+                            {toolsData.map((tool , index)=>(
+                                <li key={index}>
+                                    <Image src={tool}  alt="icon" className='w-5 sm:w-7'/>
+                                </li>
+                            ))}
+                    </ul>
                 </div>
             </div>
         </div>
