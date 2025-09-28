@@ -61,10 +61,10 @@ const Navbar = () => {
             <Image src={assets.close_black} alt='' className='w-5 cursor-pointer'/>
           </div>
           <li><a className='font-ovo' onClick={closeMenu} href="#top">Home</a></li>
-          <li><a className='font-ovo' onClick={closeMenu} href="#top">About </a></li>
-          <li><a className='font-ovo' onClick={closeMenu} href="#top">servies</a></li>
-          <li><a className='font-ovo' onClick={closeMenu} href="#top">Work</a></li>
-          <li><a className='font-ovo' onClick={closeMenu} href="#top">Contant</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#about">About </a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#servies">servies</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#work">Work</a></li>
+          <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contant</a></li>
         </ul>
 
         
