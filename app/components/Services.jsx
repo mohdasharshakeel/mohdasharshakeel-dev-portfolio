@@ -1,4 +1,5 @@
 import { serviceData } from '@/assets/assets'
+import Image from 'next/image'
 import React from 'react'
 
 const Services = () => {
@@ -11,7 +12,10 @@ const Services = () => {
       </p>
       <div className='grid grid-cols-4 gap-6 my-10 '>
         {serviceData.map(({icon, title, description, link}, index )=>( 
-          <div></div>
+          <div key={index}>
+          <Image src={} />
+
+          </div>
         ))}
       </div>
       
