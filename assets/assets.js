@@ -114,25 +114,25 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "photo AI Editor",
+    description: "Full Stack Web-App",
     bgImage: "/work-1.png",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "AI Career Coach",
+    description: "Full Stack Web-App",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Uber",
+    description: "Full-stack App",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "E-commerce",
+    description: "App with Microservices",
     bgImage: "/work-4.png",
-  },
+  }, 
 ];
 
 // ======================= Services Data =======================
