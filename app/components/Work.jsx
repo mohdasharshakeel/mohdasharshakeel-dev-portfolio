@@ -1,4 +1,5 @@
-import { workData } from '@/assets/assets'
+import { assets, workData } from '@/assets/assets'
+import Image from 'next/image'
 import React from 'react'
 
 const Work = () => {
@@ -9,10 +10,18 @@ const Work = () => {
       <p className='text-center max-w-xl sm:max-w-2xl mx-auto mt-5 mb-12 text-sm sm:text-base font-Ovo'>
         Step into my web development realm! Explore innovative projects highlighting cutting-edge front-end solutions, interactive UIs, and performance-optimized designs.
       </p>
-      <div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 mt-1 '>
         {workData.map((projects, index)=>(
-            <div key={index} style={{backgroundImage: `url(${projects.bgImage})`}}>
-                
+            <div key={index} className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg  relative cursor-pointer group ' style={{backgroundImage: `url(${projects.bgImage})`}}>
+               <div>
+                 <div>
+                    <h2>{projects.title}</h2>
+                    <p>{projects.description}</p>
+                </div>
+                <div>
+                    <Image src={assets.send_icon} alt='sendIcon' className='w-5'/>
+                </div>
+               </div>
             </div>
         ))}
       </div>
