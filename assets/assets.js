@@ -140,13 +140,13 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.ux_icon,
-    title: "Frontend ",
+    title: "Frontend Development ",
     description: "Where creativity meets code for flawless interfaces...",
     link: "",
   },
   {
     icon: assets.backend_icon,
-    title: "Backend",
+    title: "Backend Development",
     description:
       "The unseen powerhouse behind every modern application...",
     link: "",

@@ -1,4 +1,4 @@
-import { serviceData } from '@/assets/assets'
+import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
@@ -18,7 +18,9 @@ const Services = () => {
           <p className='text-sm text-gray-600 leading-5'>
             {description}
           </p>
-
+          <a href={link} className='flex items-center gap-2 text-sm mt-2 text-blue-600 font-Ovo'> 
+            Read more <Image src={assets.right_arrow} alt='' className='w-4'/>
+              </a>
           </div>
         ))}
       </div>
