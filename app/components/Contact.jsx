@@ -3,7 +3,7 @@
  const Contact = () => {
    return (
      <div  id="contact"
-      className="w-full px-4 sm:px-8 md:px-[10%] lg:px-[12%] py-10 scroll-mt-20">
+      className=' w-full px-4 sm:px-8 md:px-[10%] lg:px-[12%] py-10 scroll-mt-20 bg-[url("/header-bg-color.png")] '>
        <h4 className="text-center mb-2 text-md sm:text-lg font-Ovo">
         Creative Showcase
       </h4>
