@@ -48,10 +48,10 @@ import gitlab_icon from "./GitLab.png";
 import react_icon from "./ReactIcon.png";
 import nextjs_icon from "./Next.js.png";
 import npm_icon from "./NPM_icon.png";
-import ux_icon from "./ux.png" 
-import agile_icon from "./agile.png"
-import database_icon from "./database.png"
-import backend_icon from "./backend.png"
+import ux_icon from "./ux.png";
+import agile_icon from "./agile.png";
+import database_icon from "./database.png";
+import backend_icon from "./backend.png";
 
 // ======================= Assets Object =======================
 
@@ -104,10 +104,10 @@ export const assets = {
   react_icon,
   nextjs_icon,
   npm_icon,
-    ux_icon,
-    agile_icon,
-    database_icon,
-    backend_icon
+  ux_icon,
+  agile_icon,
+  database_icon,
+  backend_icon,
 };
 
 // ======================= Work Data =======================
@@ -117,22 +117,26 @@ export const workData = [
     title: "AI-Fotuu-editor",
     description: "Web-App",
     bgImage: "/work-1.png",
+    link: "https://fotuu-editor.vercel.app/",
   },
   {
     title: "AI Career Coach",
     description: "Web-App",
     bgImage: "/work-2.png",
+    link: "https://sensei-iota-kohl.vercel.app/",
   },
   {
     title: "Uber-Full clone",
     description: "Web App",
     bgImage: "/work-3.png",
+    link: "https://github.com/mohdasharshakeel/UberProject",
   },
   {
     title: "E-commerce",
     description: "Web App",
     bgImage: "/work-4.png",
-  }, 
+    link: "https://github.com/mohdasharshakeel/Multi-vendor-Ecommerce",
+  },
 ];
 
 // ======================= Services Data =======================
@@ -147,21 +151,20 @@ export const serviceData = [
   {
     icon: assets.backend_icon,
     title: "Backend Development",
-    description:
-      "The unseen powerhouse behind every modern application...",
+    description: "The unseen powerhouse behind every modern application...",
     link: "",
   },
   {
     icon: assets.database_icon,
     title: "Database Design",
-    description:
-      "Organizing data for reliability, performance, and clarity...",
+    description: "Organizing data for reliability, performance, and clarity...",
     link: "",
   },
   {
     icon: assets.agile_icon,
     title: "Basic DevOps",
-    description: "Optimizing pipelines for performance, reliability, and speed...",
+    description:
+      "Optimizing pipelines for performance, reliability, and speed...",
     link: "",
   },
 ];
