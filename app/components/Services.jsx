@@ -1,3 +1,4 @@
+import { serviceData } from '@/assets/assets'
 import React from 'react'
 
 const Services = () => {
@@ -9,7 +10,9 @@ const Services = () => {
        Transforming ideas into powerful digital products — I design and develop full-stack solutions with precision, performance, and creativity. From concept to deployment, I deliver modern, scalable, and impactful experiences that truly stand out.
       </p>
       <div className='grid grid-cols-4 gap-6 my-10 '>
-
+        {serviceData.map(({icon, title, description, link}, index )=>( 
+          <div></div>
+        ))}
       </div>
       
     </div>
