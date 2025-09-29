@@ -114,23 +114,23 @@ export const assets = {
 
 export const workData = [
   {
-    title: "photo AI Editor",
-    description: "Full Stack Web-App",
+    title: "AI-Fotuu-editor",
+    description: "Web-App",
     bgImage: "/work-1.png",
   },
   {
     title: "AI Career Coach",
-    description: "Full Stack Web-App",
+    description: "Web-App",
     bgImage: "/work-2.png",
   },
   {
-    title: "Uber",
-    description: "Full-stack App",
+    title: "Uber-Full clone",
+    description: "Web App",
     bgImage: "/work-3.png",
   },
   {
     title: "E-commerce",
-    description: "App with Microservices",
+    description: "Web App",
     bgImage: "/work-4.png",
   }, 
 ];
