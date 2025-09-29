@@ -13,7 +13,8 @@ const Services = () => {
       <div className='grid grid-cols-4 gap-6 my-10 '>
         {serviceData.map(({icon, title, description, link}, index )=>( 
           <div key={index}>
-          <Image src={} />
+          <Image src={icon} alt='' className='w-10'/>
+          <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
 
           </div>
         ))}
