@@ -20,6 +20,7 @@
 
         </div>
         <textarea rows='6' placeholder='Enter your message' required></textarea>
+        <button type='submit'>Submit now</button>
       </form>
      </div>
    )
