@@ -19,7 +19,7 @@
           <input type="email" placeholder='Enter your Email' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white'/>
 
         </div>
-        <textarea rows='6' placeholder='Enter your message' required></textarea>
+        <textarea rows='6' placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6'></textarea>
         <button type='submit'>Submit now</button>
       </form>
      </div>
