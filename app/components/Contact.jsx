@@ -1,8 +1,35 @@
+"use client";
+
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "${process.env.EMAIL_KEY}");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully ✅");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message || "Something went wrong ❌");
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -45,6 +72,7 @@ const Contact = () => {
         >
           Submit <Image src={assets.right_arrow_white} alt="" className="w-4" />
         </button>
+        <p className="mt-4">{result}</p>
       </form> 
     </div>
   );
