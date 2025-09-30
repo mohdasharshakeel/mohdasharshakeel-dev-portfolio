@@ -13,7 +13,14 @@
       <p className="text-center max-w-xl sm:max-w-2xl mx-auto mt-5 mb-12 text-sm sm:text-base font-Ovo">
         I'd Love to hear from you! if you have any questions, comments, or feedback, please use the form below
       </p>
-      <form ></form>
+      <form >
+        <div>
+          <input type="text" placeholder='Enter your name' required />
+          <input type="email" placeholder='Enter your Email' required />
+
+        </div>
+        <textarea rows='6' placeholder='Enter your message' required></textarea>
+      </form>
      </div>
    )
  }
