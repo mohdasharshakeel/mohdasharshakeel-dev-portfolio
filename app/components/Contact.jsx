@@ -11,9 +11,7 @@
         Get In Touch
       </h2>
       <p className="text-center max-w-xl sm:max-w-2xl mx-auto mt-5 mb-12 text-sm sm:text-base font-Ovo">
-        Step into my web development realm! Explore innovative projects
-        highlighting cutting-edge front-end solutions, interactive UIs, and
-        performance-optimized designs.
+        I'd Love to hear from you! if you have any questions, comments, or feedback, please use the form below
       </p>
      </div>
    )
