@@ -45,7 +45,7 @@ const Contact = () => {
         I'd Love to hear from you! if you have any questions, comments, or
         feedback, please use the form below
       </p>
-      <form className="max-w-2xl mx-auto">
+      <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
