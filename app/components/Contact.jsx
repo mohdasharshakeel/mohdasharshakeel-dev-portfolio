@@ -15,7 +15,7 @@
       </p>
       <form className='max-w-2xl mx-auto' >
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
-          <input type="text" placeholder='Enter your name' required />
+          <input type="text" placeholder='Enter your name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white'/>
           <input type="email" placeholder='Enter your Email' required />
 
         </div>
