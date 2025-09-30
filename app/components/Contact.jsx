@@ -67,6 +67,7 @@ const Contact = () => {
           placeholder="Enter your message"
           required
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          name="message"
         ></textarea>
         <button
           type="submit"
