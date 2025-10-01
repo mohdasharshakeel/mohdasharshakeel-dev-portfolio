@@ -10,8 +10,8 @@ import Work from "./components/Work";
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   useEffect(()=>{
-    
-  })
+
+  },[isDarkMode])
 
   return (
     <>
