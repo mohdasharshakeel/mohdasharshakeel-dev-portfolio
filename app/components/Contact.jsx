@@ -35,7 +35,7 @@ const Contact = () => {
     <div
       id="contact"
       className='w-full px-4 sm:px-8 md:px-[10%] lg:px-[12%] py-10 scroll-mt-20 
-                 bg-[url("/header-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'
+                 bg-[url("/header-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none  '
     >
       {/* Heading */}
       <h4 className="text-center mb-2 text-md sm:text-lg font-Ovo">
@@ -58,14 +58,14 @@ const Contact = () => {
             placeholder="Enter your name"
             required
             name="name"
-            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white"
+            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 "
           />
           <input
             type="email"
             placeholder="Enter your Email"
             required
             name="email"
-            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white"
+            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 "
           />
         </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
           placeholder="Enter your message"
           required
           name="message"
-          className="w-full p-4 outline-none border border-gray-400 rounded-md bg-white mb-6"
+          className="w-full p-4 outline-none border border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
         ></textarea>
 
         {/* Submit Button */}
@@ -83,7 +83,7 @@ const Contact = () => {
           type="submit"
           className="py-3 px-8 w-max flex items-center justify-between gap-2 
                      bg-black/80 text-white rounded-full mx-auto 
-                     hover:bg-black duration-500 font-Ovo"
+                     hover:bg-black duration-500 font-Ovo dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover  "
         >
           Submit <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
         </button>
