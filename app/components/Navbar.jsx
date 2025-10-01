@@ -21,12 +21,12 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       } else {
         setIsScroll(false);
       }
-    });
+    }); 
   }, []);
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
         <Image src={assets.header_bg_color} alt="bgc" className="w-full" />
       </div>
       <nav
@@ -75,7 +75,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
         <div className="flex items-center gap-4">
           <button onClick={()=>setIsDarkMode(prev => !prev)}>
-            <Image src={assets.moon_icon} alt="" className="w-6 h-6" />
+            <Image src={isDarkMode ? assets.sun_icon :  assets.moon_icon} alt="" className="w-6 h-6" />
           </button>
 
           <a
