@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
