@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 *{
   font-family: outfit;
@@ -11,3 +12,8 @@ body {
   box-sizing: border-box;
 }
 
+@theme {
+  --color-lightHover:#fcf4ff;
+  --color-darkHover:#2a004a;
+  --color-darkTheme:#11001f;
+}
