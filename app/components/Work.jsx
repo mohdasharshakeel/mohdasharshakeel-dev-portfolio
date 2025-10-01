@@ -2,7 +2,7 @@ import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 
-const Work = () => {
+const Work = ({isDarkMode}) => {
   return (
     <div
       id="work"
@@ -22,7 +22,7 @@ const Work = () => {
       </p>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 mt-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 mt-1 dark:text-black">
         {workData.map((projects, index) => (
           <div
             key={index}
@@ -40,7 +40,7 @@ const Work = () => {
                 href={projects.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition "
               >
                 <Image src={assets.send_icon} alt="sendIcon" className="w-5" />
               </a>
@@ -52,11 +52,11 @@ const Work = () => {
       {/* Show More Button */}
       <a
         href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500"
+        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:text-white/80 dark:border-white/80 dark:hover:bg-white/20"
       >
         Show more
         <Image
-          src={assets.right_arrow_bold}
+          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
           alt="right bold"
           className="w-4"
         />
