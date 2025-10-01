@@ -34,14 +34,14 @@ export default function Home() {
 
   return (
     <>
-    <Navbar/>
-    <Header/>
-    <About/>
-    <Services/>
-    <Work/>
-    <Contact/>
-    <Footer/>
+    <Navbar isDarkMode={isDarkMode}/>
+    <Header isDarkMode={isDarkMode}/>
+    <About isDarkMode={isDarkMode}/>
+    <Services isDarkMode={isDarkMode}/>
+    <Work isDarkMode={isDarkMode}/>
+    <Contact isDarkMode={isDarkMode}/>
+    <Footer isDarkMode={isDarkMode}/>
 
     </>
-  ); 
+  );  
 }
