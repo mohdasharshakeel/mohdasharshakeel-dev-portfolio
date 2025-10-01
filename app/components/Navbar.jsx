@@ -4,7 +4,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
   const openMenu = () => {
@@ -21,7 +21,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       } else {
         setIsScroll(false);
       }
-    }); 
+    });
   }, []);
 
   return (
@@ -31,24 +31,26 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4  flex items-center justify-between z-50 ${
-          isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm " : ""
+          isScroll
+            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+            : ""
         } `}
       >
         <a href="#top">
           <Image
-            src={assets.logo}
+            src={isDarkMode ? assets.logo_dark  : assets.logo}
             alt="nameWhite"
             className="w-28 cursor-pointer mr-14 "
           />
         </a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 ${
-            isScroll ? "" : " py-3 bg-white/50 shadow-sm"
+            isScroll ? "" : " py-3 bg-white shadow-sm bg-opcacity-50 dark:border dark:border-white/50 dark:bg-transparent  "
           }`}
         >
           <li>
             <a className="font-ovo" href="#top">
-              Home
+              Home 
             </a>
           </li>
           <li>
@@ -74,19 +76,23 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <button onClick={()=>setIsDarkMode(prev => !prev)}>
-            <Image src={isDarkMode ? assets.sun_icon :  assets.moon_icon} alt="" className="w-6 h-6" />
+          <button onClick={() => setIsDarkMode((prev) => !prev)}>
+            <Image
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
+              alt=""
+              className="w-6 h-6"
+            />
           </button>
 
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50"
           >
             Contact
-            <Image src={assets.arrow_icon} alt="logo" className="w-3" />
+            <Image src={ isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="logo" className="w-3" />
           </a>
           <button className="block md:hidden ml-3" onClick={openMenu}>
-            <Image src={assets.menu_black} alt="" className="w-6" />
+            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt="" className="w-6" />
           </button>
         </div>
 
@@ -134,4 +140,4 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
   );
 };
 
-export default Navbar;  
+export default Navbar;
