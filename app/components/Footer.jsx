@@ -12,7 +12,7 @@ const Footer = () => {
           mohdasharshakeel@gmail.com
         </div>
       </div>
-      <div>
+      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
         <p>© 2025 Ashar Shakeel. All right reserved. </p>
         <ul>
             <li><a target="_blank" href="https://github.com/mohdasharshakeel">GitHub</a></li>
