@@ -28,7 +28,7 @@ const Services = () => {
           <div
             key={index}
             className="border border-gray-400 rounded-lg px-6 py-8 sm:px-8 sm:py-10 cursor-pointer 
-                       hover:bg-#fcf4ff hover:translate-y-1 transition-transform duration-500"
+                       hover:bg-#fcf4ff hover:translate-y-1 transition-transform duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto">
               <Image
@@ -37,10 +37,10 @@ const Services = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <h3 className="text-lg sm:text-xl my-4 text-gray-700 text-center">
+            <h3 className="text-lg sm:text-xl my-4 text-gray-700 text-center dark:text-white/80">
               {title}
             </h3>
-            <p className="text-sm sm:text-base text-gray-600 leading-5 text-center">
+            <p className="text-sm sm:text-base text-gray-600 leading-5 text-center dark:text-white/80">
               {description}
             </p>
             <a
