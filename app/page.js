@@ -12,8 +12,10 @@ export default function Home() {
   useEffect(()=>{
     if(isDarkMode){
       document.documentElement.classList.add('dark')
+      localStorage.theme = 'dark'
     }else{
       document.documentElement.classList.remove('dark')
+      localStorage.theme = ''
     }
 
   },[isDarkMode])
