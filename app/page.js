@@ -11,6 +11,11 @@ import Work from "./components/Work";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
+
+ useEffect(()=>{
+
+ })
+
   useEffect(()=>{
     if(isDarkMode){
       document.documentElement.classList.add('dark')
