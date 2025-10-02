@@ -13,15 +13,27 @@ const Header = () => {
       >
         <Image src={assets.profile_img} alt="" className="rounded-full w-32 " />
       </motion.div>
-      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo ">
+      <motion.h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo "
+       initial={{ y: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
         Hi! I'm Mohd Ashar Shakeel{" "}
         <Image src={assets.hand_icon} alt="" className="  w-6" />
-      </h3>
+      </motion.h3>
 
-      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+      <motion.h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
+      inertial={{y:-30 , opacity: 0 }}
+      whileInView={{y:0 , opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      >
         Full Stack Web Developer based in India .
-      </h1>
-      <motion.p className="max-w-2xl mx-auto font-Ovo">
+      </motion.h1>
+      <motion.p className="max-w-2xl mx-auto font-Ovo"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+      >
         Full Stack Developer skilled in React.js, Node.js, MongoDB, and Next.js,
         building scalable, high-performance web apps. Experienced in RESTful
         APIs, AI integrations, and responsive design with Tailwind CSS.
