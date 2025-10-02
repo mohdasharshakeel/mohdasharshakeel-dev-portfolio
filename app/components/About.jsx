@@ -1,10 +1,15 @@
 import { assets, infoList, toolsData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import {motion} from "motion/react";
 
 const About = ({isDarkMode}) => {
   return (
-    <div id="about" className="w-full px-6 sm:px-12 lg:px-[12%] py-10 scroll-mt-20">
+    <motion.div id="about" className="w-full px-6 sm:px-12 lg:px-[12%] py-10 scroll-mt-20"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1}}
+    transition={{ duration: 1 }}
+    >
       <h4 className="text-center mb-2 text-lg sm:text-xl font-Ovo">Who I Am</h4>
       <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-Ovo mb-10">What I Do</h2>
 
@@ -53,7 +58,7 @@ const About = ({isDarkMode}) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
